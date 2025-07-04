@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('https://images.unsplash.com/photo-1500964757637-c85e8a162699?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80'); /* Example nature background */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden; /* Prevent scrolling */
+    color: #fff; /* Default text color, will be adjusted by overlay */
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 1;
+}
+
+.container {
+    position: relative; /* To ensure it's above the overlay */
+    z-index: 2;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1); /* Slight white transparent background for the container */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px); /* Frosted glass effect */
+    max-width: 500px; /* Max width for the container */
+    width: 90%; /* Responsive width */
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+#falImage {
+    max-width: 100%;
+    height: auto;
+    min-height: 200px; /* Minimum height before image loads */
+    border: 3px solid #fff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    background-color: rgba(255, 255, 255, 0.1); /* Placeholder bg for image */
+}
+
+button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2em;
+    margin: 10px 5px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+button:active {
+    background-color: #3e8e41;
+    transform: translateY(0);
+}
+
+#getFalAgainButton {
+    background-color: #008CBA; /* Blue */
+}
+
+#getFalAgainButton:hover {
+    background-color: #007ba7;
+}
+
+#getFalAgainButton:active {
+    background-color: #006994;
+}
