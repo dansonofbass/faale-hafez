@@ -74,7 +74,7 @@ body.bg-2 #bgOverlay2 {
     justify-content: center;
     box-sizing: border-box;
     direction: rtl;
-    gap: 1rem;
+    gap: 1%;
 }
 
 .main-heading {
@@ -124,7 +124,7 @@ body.bg-2 #bgOverlay2 {
 h2#falTitle {
     font-family: 'Fustat', serif !important;
     font-weight: 700;
-    font-size: clamp(1.8rem, 4vw, 2rem);
+    font-size: clamp(1.6rem, 4vw, 1.8rem);
     color: #ffffffe1;
     text-align: center;
     direction: rtl;
@@ -136,7 +136,7 @@ h2#falTitle {
     opacity: 0;
     transform: translateX(-30px);
     animation-delay: 0.2s;
-    margin: 0;
+    margin: 5px;
 }
 
 #falImage {
